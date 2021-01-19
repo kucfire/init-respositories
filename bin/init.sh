@@ -70,7 +70,6 @@ touch dao/demo.go controller/demo.go dto/demo.go conf/demo.conf router/demo.go
 echo "package dao" >dao/demo.go
 echo "package controller" >controller/demo.go
 echo "package dto" >dto/demo.go
-echo "package conf" >conf/demo.go
 echo "package router" >router/demo.go
 cp init.sh bin
 ## 如果有自己的demo，可以直接clone下demo到该empty respositories中
