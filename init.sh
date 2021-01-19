@@ -68,4 +68,4 @@ echo "remote add successful"
 ## 上传当前目录的所有东西到远程代码仓库
 git add .
 git commit -m "init respositories"
-git push $1 main
+git push $1 master
