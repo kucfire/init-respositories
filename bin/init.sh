@@ -64,8 +64,10 @@ echo "remote add successful"
 ## 创建项目所需的文件分类
 ## example about go:
 # touch -p dao/demo.go controller/demo.go dto/demo.go logs bin conf/demo.go router/demo.go
+# TODO 用正则表达式筛选文件夹名称并使用echo放进对应的demo.go里面去
 mkdir dao controller dto logs bin conf router
 touch dao/demo.go controller/demo.go dto/demo.go conf/demo.conf router/demo.go
+echo "package dao" >dao/demo.go
 cp init.sh bin
 ## 如果有自己的demo目录，可以直接clone下demo目录到该empty中
 # git clone
