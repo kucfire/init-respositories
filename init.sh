@@ -68,8 +68,12 @@ echo "remote add successful"
 mkdir dao controller dto logs bin conf router
 touch dao/demo.go controller/demo.go dto/demo.go conf/demo.conf router/demo.go
 echo "package dao" >dao/demo.go
+echo "package controller" >controller/demo.go
+echo "package dto" >dto/demo.go
+echo "package conf" >conf/demo.go
+echo "package router" >router/demo.go
 cp init.sh bin
-## 如果有自己的demo目录，可以直接clone下demo目录到该empty中
+## 如果有自己的demo，可以直接clone下demo到该empty respositories中
 # git clone
 
 ## 上传当前目录的所有东西到远程代码仓库
