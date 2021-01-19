@@ -63,7 +63,9 @@ echo "remote add successful"
 
 ## 创建项目所需的文件分类
 ## example about go:
-touch -p dao/demo.go controller/demo.go dto/demo.go logs bin conf/demo.go router/demo.go
+# touch -p dao/demo.go controller/demo.go dto/demo.go logs bin conf/demo.go router/demo.go
+mkdir dao controller dto logs bin conf router
+touch dao/demo.go controller/demo.go dto/demo.go conf/demo.conf router/demo.go
 cp init.sh bin
 ## 如果有自己的demo目录，可以直接clone下demo目录到该empty中
 # git clone
