@@ -63,7 +63,9 @@ echo "remote add successful"
 
 ## 创建项目所需的文件分类
 ## example:
-# mkdir -p ./{dao,controller,dto,}
+mkdir -p ./{dao,controller,dto,logs,bin.conf,router}
+## 如果有自己的demo目录，可以直接clone下demo目录到该empty中
+# git clone
 
 ## 上传当前目录的所有东西到远程代码仓库
 git add .
