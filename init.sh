@@ -78,4 +78,5 @@ cp init.sh bin
 ## 上传当前目录的所有东西到远程代码仓库
 git add .
 git commit -m "init respositories"
-git push $1 master
+git branch -m main
+git push -u $1 master
