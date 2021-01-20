@@ -79,4 +79,4 @@ cp init.sh bin
 git add .
 git commit -m "init respositories"
 # git branch -m main
-git push -u $1 master
+git push -u $1 main
