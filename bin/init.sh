@@ -43,7 +43,7 @@ else
     cat /dev/null >.gitignore  # 测试用的，实际使用该脚本时需要注释掉该选项
 fi
 ## 写入常用的禁止上传github的无用文件
-echo ".history/\nlogs/\ndist/\nlogs/\nnode_modules/\npackage-lock.json\n.vscode\n" >>.gitignore # 产生该文件的为vscode中的一款历史记录的插件，该插件会随着保存而创建多个文件，造成大量的无需上传github的文件，影响上传速率甚至浪费资源
+echo ".history/\nlogs/\ndist/\nlogs/\nnode_modules/\npackage-lock.json\n.vscode" >>.gitignore # 产生该文件的为vscode中的一款历史记录的插件，该插件会随着保存而创建多个文件，造成大量的无需上传github的文件，影响上传速率甚至浪费资源
 
 ## 初始化项目的git环境,直接git init,不做其他判断
 # if [ ! -d .git ]; then
